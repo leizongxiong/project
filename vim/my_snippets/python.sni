@@ -1,0 +1,73 @@
+snippet coding
+    # -*- coding: UTF-8 -*-
+snippet ifm 作为独立程序运行
+    if __name__ == '__main__':
+        ${1}
+snippet im 导入模块
+    import ${1:m_name}
+snippet im_f 导入..从..
+    import ${1} from ${2}
+snippet f_im 从..导入 ..
+    from ${1} import ${2}
+snippet rl 重新载入
+    reload(${1})${2}
+# 字符串
+snippet / 单行注释
+    #  ${1}
+snippet // 文档字符串、块注释
+    """ ${1}"""
+snippet r 不解释转义字符
+    r'${1}'${2}
+snippet u Unicode字符串
+    u'${1}'${2}
+# 类、函数定义
+snippet cl 类定义，不带括号
+    class ${1:cl_name}:
+        ${2}
+snippet cl. 类定义，带括号
+    class ${1:cl_name}(${2}):
+        ${3}
+snippet d 函数定义，不带self
+    def ${1:f_name}(${2}):
+        ${3}
+snippet d. 方法定义，带self
+    def ${1:f_name}(self${2}):
+        ${3}
+snippet di 初始化方法
+    def __init__(self${1}):
+        ${2}
+snippet dd 析构方法
+    def __del__(self${1}):
+        ${2}
+snippet la 匿名函数
+    lambda ${1}: ${2}
+# 流程控制
+snippet if
+    if ${1}:
+        ${2}
+snippet elif
+    elif ${1}:
+        ${2}
+snippet el
+    else:
+        ${1}
+snippet for
+    for ${1} in ${2}:
+        ${3}
+snippet wh
+    while ${1}:
+        ${2}
+# 异常处理
+snippet try 捕获异常
+    try:
+        ${1}
+snippet exp 处理异常
+    except ${1}:
+        ${2}
+snippet fin
+    finally:
+        ${1}
+snippet ras 抛出异常
+    raise ${1}
+snippet as 断言
+    asse

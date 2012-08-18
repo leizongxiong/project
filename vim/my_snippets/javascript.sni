@@ -1,0 +1,60 @@
+snippet / 单行注释
+    //  ${1}
+snippet // 多行注释
+    /* ${1}*/
+snippet use 严格模式
+    "use strict";
+snippet f 函数定义
+    function ${1}(${2}) {
+        ${3}
+    }
+snippet with
+    with(${1}) {
+        ${2}
+    }
+snippet if
+    if(${1}) {
+        ${2}
+    }
+snippet elif
+    else if(${1}) {
+        ${2}
+    }
+snippet el
+    else {${1}
+    }
+snippet for
+    for(${1}) {
+        ${2}
+    }
+snippet wh
+    while(${1}) {
+        ${2}
+    }
+snippet do
+    do {${2}
+    } while(${1});
+snippet tp
+    typeof${1}
+snippet re
+    return ${1};${2}
+snippet p 常用输出
+    document.writeln(${1});${2}
+snippet al
+    alert(${1});${2}
+snippet len 获取字符串长度
+    length${1}
+snippet ts
+    this
+# 常用函数
+snippet toS 转换为字符串
+    toString(${1});
+snippet isF 判断是否在可以表示的数值范围以内
+    isFinite(${1});
+snippet isN 判断是否为非数值
+    isNaN(${1});
+snippet paI 转换为整数
+    parseInt(${1});
+snippet paF 转换为浮点数
+    parseFloat(${1});
+
